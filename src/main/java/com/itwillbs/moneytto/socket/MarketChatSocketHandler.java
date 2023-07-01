@@ -25,7 +25,7 @@ public class MarketChatSocketHandler extends TextWebSocketHandler {
 	private Map<String, ArrayList<WebSocketSession>> marketList = new ConcurrentHashMap<String, ArrayList<WebSocketSession>>();
 
 	private Map<WebSocketSession, String> sessionList = new ConcurrentHashMap<WebSocketSession, String>();
-	
+														//Multi-Thread 환경에서 사용할 수 있도록 나온 클래스
 	
 	@Autowired
 	MarketChatService marketChatService;
